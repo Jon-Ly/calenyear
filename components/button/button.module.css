@@ -1,0 +1,32 @@
+.btn {
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--primary-text-color);
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    opacity: 1;
+}
+
+.btnOutline {
+    border: 1px solid var(--primary-color);
+}
+
+.btnOutline:hover {
+    background-color: var(--primary-color);
+}
+
+.btnPrimary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.fullWidthBtn {
+    width: 100%;
+}

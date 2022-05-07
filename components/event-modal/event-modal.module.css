@@ -1,0 +1,28 @@
+.eventModal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 101;
+}
+
+.eventModalActions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: right;
+    padding-top: 1rem;
+}
+
+.eventModalBackdrop {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    background-color:rgba(0, 0, 0, 0.45);
+    z-index: 100;
+}

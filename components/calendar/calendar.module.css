@@ -1,0 +1,34 @@
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    position: relative;
+}
+
+.dayText {
+    font-weight: 600;
+}
+
+.divider {
+    width: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.monthContainer {
+    position: relative;
+}
+
+.monthText {
+    position: absolute;
+    top: 0;
+    left: -8rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.todayHighlight {
+    background-color: var(--seconday-color);
+    width: 100%;
+    display: inline-block;
+}
