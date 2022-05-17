@@ -7,7 +7,7 @@
     gap: 0.5rem;
     padding-inline: 0.75rem;
     padding-bottom: 0.75rem;
-    bottom: 80%;
+    bottom: calc(100vh / 2);
     left: calc(100vw / 1.17);
     width: fit-content;
     text-align: center;

@@ -1,7 +1,12 @@
-type Event = {
-    name?: string,
-    startDate?: Date,
+export default class Event {
+    id: string
+    name?: string
+    startDate?: Date
     endDate?: Date
-}
+    overlaps: Event[]
 
-export default Event
+    constructor(id?: string) {
+        this.id = id || ''
+        this.overlaps = []
+    }
+}

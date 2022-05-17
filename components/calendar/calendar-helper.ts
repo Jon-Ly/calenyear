@@ -15,3 +15,21 @@ export function GetMonthString(date: Date): string {
         default: return ''
     }
 }
+
+export function GetDaysInTheYear(year: number): number {
+    const currentDate = new Date()
+
+    currentDate.setDate(1)
+    currentDate.setMonth(0)
+    currentDate.setFullYear(year)
+    
+    const currentYear = currentDate.getFullYear()
+    let result = 0
+
+    while(currentDate.getFullYear() == currentYear) {
+        result += 1
+        currentDate.setDate(currentDate.getDate() + 1)
+    }
+
+    return result
+}

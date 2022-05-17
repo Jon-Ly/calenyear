@@ -17,8 +17,7 @@ today.setDate(today.getDate() + 10)
 const fartherDay = new Date(today)
 
 const mockData: Event[] = [
-    { name: "Event 1.0", startDate: new Date(), endDate: nextDay},
-    { name: "Event 2.0", startDate: new Date(), endDate: farDay},
-    { name: "Event 2.1", startDate: new Date(), endDate: fartherDay},
-    { name: "Event 3.0", startDate: farDay, endDate: fartherDay},
+    { id: 'hello', name: "Event 1.0", startDate: new Date(), endDate: nextDay, overlaps: []},
+    { id: 'hello', name: "Event 2.0", startDate: nextDay, endDate: farDay, overlaps: []},
+    { id: 'hello', name: "Event 3.0", startDate: farDay, endDate: fartherDay, overlaps: []}
 ]

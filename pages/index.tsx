@@ -44,7 +44,7 @@ const Home: NextPage = () => {
     return (
       <div>
         <main className={styles.mainContent}>
-            <Calendar events={events}/>
+            <Calendar events={events} year={2022}/>
         </main>
         <ActionContainer>
             <YearDropdown year={year} onChange={setYear}/>
